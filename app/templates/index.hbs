@@ -1,18 +1,30 @@
-<section class="mw5 mw7-ns pa3 ph5-ns">
-    <p class="lh-copy measure">
-        Vish is a Developer from Bangalore, India, living and working in Chennai, India.
-    </p>
+<main class="dt-row items-baseline">
 
-    <p class="lh-copy measure">
-        Amongst thousands of photos, it's easy to lose track of my favorites. This little website serves as a home for
-        the photos I adore the most
-    </p>
+    <section class="dtc miw-75 mw6 pa3 ph5-ns">
+        <p class="lh-copy measure">
+            Vish is a Developer from Bangalore, India, living and working in Chennai, India.
+        </p>
 
-</section>
+        <p class="lh-copy measure">
+            Amongst thousands of photos, it's easy to lose track of my favorites. This little website serves as a home
+            for
+            the photos I adore the most
+        </p>
 
-<div class="list pa3 pa5-ns nowrap">
-	{{#each countries as |country|}}
-        <li class="dib mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">{{country}}</a></li>
+    </section>
+
+	{{!--{{#each countries as |country|}}--}}
+	{{!--<div class="dtc mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">{{country}}</a></div>--}}
+	{{!--{{/each}}--}}
+
+	{{#each categories as |category index|}}
+        <div class="dtc v-mid pr4">
+            <a href="#{{index}}">
+                <img class="db w-auto calc-h-100 mb2" src="https://source.unsplash.com/category/{{category}}">
+            </a>
+            <p class="mb0">{{category}}</p>
+        </div>
 	{{/each}}
-</div>
+
+</main>
 
