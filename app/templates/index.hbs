@@ -2,27 +2,46 @@
 
     <section class="dtc miw-75 mw6 pa3 ph5-ns">
         <p class="lh-copy measure">
-            Vish is a Developer from Bangalore, India, living and working in Chennai, India.
+            I build things.
         </p>
 
         <p class="lh-copy measure">
-            Amongst thousands of photos, it's easy to lose track of my favorites. This little website serves as a home
-            for
-            the photos I adore the most
+            Originally, from Bangalore, India. Currently at Chennai, India.
         </p>
 
-    </section>
+        <p class="lh-copy measure">
+            Stumbled upon <a class="link dim gray" target="_blank" href="https://twitter.com/_dte?lang=en">@_dte</a>'s
+            home for his photographs,
+            <a class="link dim gray" target="_blank" href="https://photos.daneden.me/">photos.daneden.me</a>.
+        </p>
 
-	{{!--{{#each countries as |country|}}--}}
-	{{!--<div class="dtc mr2"><a href="#" class="f4 f2-ns b db pa2 link dim mid-gray">{{country}}</a></div>--}}
-	{{!--{{/each}}--}}
+        <p class="lh-copy measure">
+            This is an imitation of his fascinating work.
+        </p>
+
+        <p class="lh-copy measure">
+            Built with &hearts; +
+			<a href="http://emberjs.com/" title="Ember - A framework for creating ambitious web applications." class="link dim gray">EmberJs</a>
+			,
+			<a href="http://tachyons.io" title="Tachyons - CSS for designing at the speed of light" class="link dim gray">Tachyons</a>
+			&amp;
+			<a href="https://source.unsplash.com/" title="Unsplash Source - A simple API for embedding Unsplash photos." class="link dim gray">Unsplash Source</a>
+        </p>
+
+
+    </section>
 
 	{{#each categories as |category index|}}
         <div class="dtc v-mid pr4">
             <a href="#{{index}}">
-                <img class="db w-auto calc-h-100 mb2" src="https://source.unsplash.com/category/{{category}}">
+				{{#lazy-image
+					url=category.image
+					class='db w-auto calc-h-100 mb2 bg-black-05 anmt-trnstn'
+				}}
+				{{/lazy-image}}
             </a>
-            <p class="mb0">{{category}}</p>
+
+            <p class="mb0 lh-copy measure">{{category.description}}</p>
         </div>
 	{{/each}}
 
