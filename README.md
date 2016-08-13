@@ -1,10 +1,10 @@
 # valon
 
-A place for your photos, as imagined by @daneden.
+:camera: A place for your photos, as imagined by [@daneden](https://github.com/daneden).
 
-## Prerequisites
+### Prerequisites
 
-You will need the following things properly installed.
+You will need the following things.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
@@ -12,18 +12,18 @@ You will need the following things properly installed.
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
-## Install
+### Install
 
 ```
-git clone git@github.com:wizvishak/valon.git
-cd valon
-npm i
-bower i
+$ git clone git@github.com:wizvishak/valon.git
+$ cd valon
+$ npm i
+$ bower i
 ```
 
-## Run
+### Run
 
-* `ember s`
+* `$ ember s`
 * Visit app @ [http://localhost:4200](http://localhost:4200).
 
 ### Built with
@@ -32,4 +32,4 @@ bower i
 - [Unsplash Source](https://source.unsplash.com/)
 
 ### Inspired by
-- [@danedn/photos.daneden.me](https://github.com/daneden/photos.daneden.me)
+- [@daneden/photos.daneden.me](https://github.com/daneden/photos.daneden.me)
