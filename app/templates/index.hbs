@@ -34,13 +34,8 @@
 	{{#each categories as |category index|}}
         <div class="dtc v-mid pr4">
             <a href="#{{index}}">
-				{{#lazy-image
-					url=category.image
-					class='db w-auto calc-h-100 mb2 bg-black-05 anmt-trnstn'
-				}}
-				{{/lazy-image}}
+				<img class="db w-auto calc-h-100 mb2 bg-black-05 anmt-trnstn" src={{category.image}}>
             </a>
-
             <p class="mb0 lh-copy measure">{{category.description}}</p>
         </div>
 	{{/each}}

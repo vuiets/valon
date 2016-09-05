@@ -15,7 +15,7 @@ module.exports = function (defaults) {
 		},
 		lessOptions: {
 			paths: [
-				'node_modules/tachyons/css'
+				'vendor'
 			]
 		}
 	});

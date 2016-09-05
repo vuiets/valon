@@ -1,6 +1,6 @@
 # valon
 
-:camera: A place for your photos, as imagined by [@daneden](https://github.com/daneden).
+> :camera: A place for your photos, imagined by [@daneden](https://github.com/daneden).
 
 ### Prerequisites
 
